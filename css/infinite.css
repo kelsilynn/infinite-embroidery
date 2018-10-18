@@ -203,6 +203,7 @@ a {
     clear: both;
     display: table;
 }
+<<<<<<< HEAD
 
 .footer {
 	background: #151515;
@@ -234,3 +235,5 @@ a {
 .soc-med img:hover {
 	opacity: 0.4;
 }
+=======
+>>>>>>> ec70c0b227e964fea226273336738a5173f3e831
