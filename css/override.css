@@ -91,10 +91,6 @@ body {
 	}
 }
 
-@media (max-width: 768px) {
-
-}
-
 
 
 
@@ -238,6 +234,8 @@ body {
 	position: relative;
 	width: 100%;
 	height: 60px;
+	bottom: 0;
+	left: 0;
 	color: #696969;
 	padding: 10px 0;
 	line-height: 40px;
@@ -249,11 +247,14 @@ body {
 }
 
 .ftr-comp {
-	float: left;
+	display: inline-block;
+	width: 49%;
 }
 
 .soc-med {
-	float: right;
+	display: inline-block;
+	width: 49%;
+	text-align: right;
 }
 
 .soc-med img {
@@ -284,6 +285,7 @@ body {
 @media (max-width: 768px) {
 
 	/* NAVBAR */
+
 	#logo {
 		width: 100%;
 		max-width: 200px;
@@ -310,6 +312,11 @@ body {
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+	.btn {
+		font-size: 0.7rem;
+		margin-top: 0;
+	}
+
 	.btn-lg {
     padding: 8px 18px;
 	}
@@ -320,4 +327,21 @@ body {
 		width: 90%;
 	}
 
+	/* FOOTER */
+
+	.footer {
+		height: 110px;
+	}
+
+	.ftr-comp {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	.soc-med {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
 }
