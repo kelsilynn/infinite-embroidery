@@ -2,64 +2,96 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Infinite Embroidery</title>
-	<link rel="stylesheet" type="text/css" href="css/infinite.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/override.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Lobster" rel="stylesheet">
+	<title>Infinite Embroidery</title>
 </head>
 <body>
 
-<!-- <div class="hVid">
-	<video poster="poster.png" autoplay muted loop id="headerVid">
-		<source src="Notebook_Rainbow.mp4" type="video/mp4">
-		<source src="Notebook_Rainbow.webm" type="video/webm">
-	</video>
-	<div class="hText">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique scelerisque lectus, sed molestie diam rhoncus bibendum. Mauris sodales ex sit amet lorem gravida porttitor.
-	</div>
-</div> -->
+<div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"><img src="images/infinite-secondary.png" id="logo"></a>
+	    </div>
 
-<div class="header">
-	<nav class="navbar">
-	  <a href="#" class="navbar-logo"><img src="images/infinite-secondary.png" id="logo"></a>
-	  <div class="navbar-right">
-	    <a href="#">About</a>
-	    <a href="#">Shop</a>
-	    <a href="#">Contact</a>
-	  </div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">About</a></li>
+	        <li><a href="#">Shop</a></li>
+	        <li><a href="#">Contact</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
 	</nav>
 
 	<div class="video-container">
-	  <video poster="images/poster.png" autoplay loop muted id="nav-vid">
-	    <source src="videos/Notebook_Rainbow.mp4" type="video/mp4">
-	  </video>
-	    <div class="header-overlay">
-	    	<div class="overlay-text">
+		<video poster="images/poster.png" autoplay loop muted id="nav-vid">
+		    <source src="videos/Notebook_Rainbow.mp4" type="video/mp4">
+		</video>
+		<div class="header-overlay">
+		   	<div class="overlay-text">
 			    <p>Infinite Designs</p>
-			    <button class="header-button"><a href="#">Shop Now</a></button>
+			    <a href="#"><button type="button" class="btn btn-lg btn-custom">Shop Now</button></a>
 			</div>
 		</div>
-	 </div>
+	</div>
 </div>
 
-<div class="main-content clearfix">
+<div class="main-content">
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et risus lorem. Ut interdum dolor dolor, a condimentum est efficitur eu. In et massa vel felis tincidunt sollicitudin id at magna. Quisque suscipit convallis neque quis facilisis. Donec elit augue, egestas ac leo vel, rhoncus ultrices tortor. Cras porttitor leo a semper lacinia. Donec volutpat tellus est, nec faucibus tellus consectetur non.</p>
 
-	<div class="decor-container">
-		<a href="#">
-			<img src="images/placeholder5.jpg" id="shop-img">
-			<div class="shop-overlay"><div class="shop-text">Decor</div></div>
-		</a>
-	</div>
-
-	<div class="clothing-container ">
-		<a href="#">
-			<img src="images/placeholder4.jpg" id="shop-img">
-			<div class="shop-overlay"><div class="shop-text">Clothing</div></div>
-		</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="shop-container">
+					<a href="#">
+						<img src="images/placeholder5.jpg" id="shop-img">
+						<div class="shop-overlay"><div class="shop-text">Decor</div></div>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="shop-container ">
+					<a href="#">
+						<img src="images/placeholder4.jpg" id="shop-img">
+						<div class="shop-overlay"><div class="shop-text">Clothing</div></div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="shop-container">
+					<a href="#">
+						<img src="images/placeholder6.jpg" id="shop-img">
+						<div class="shop-overlay"><div class="shop-text">Accessories</div></div>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="shop-container ">
+					<a href="#">
+						<img src="images/placeholder2.jpg" id="shop-img">
+						<div class="shop-overlay"><div class="shop-text">Custom</div></div>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
-<div class="footer clearfix">
+
+<div class="footer">
 	<div class="ftr-content">		
 		<div class="ftr-comp">
 			&copy; Infinite Embroidery 2018
@@ -72,5 +104,7 @@
 	</div>
 </div>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>

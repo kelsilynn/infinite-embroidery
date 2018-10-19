@@ -1,0 +1,323 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: Open Sans, sans-serif;
+/*	background: #000;*/
+	color: #fff;
+	background-color: #000;
+}
+
+
+/* NAVBAR OVERRIDE */
+
+#logo {
+	width: 100%;
+	max-width: 250px;
+}
+
+.navbar {
+	min-height: 78px;
+	border-radius: none;
+	border-radius: 0px;
+	padding: 20px;
+}
+
+.navbar-default {
+    background-color: #000;
+}
+
+.navbar-fixed-top {
+    position: absolute;
+}
+
+.navbar-brand {
+	padding: 0 5%;
+	height: 78px;
+	line-height: 78px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand img {
+  width: auto;
+}
+
+.navbar-brand img {
+    display: inline-block;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+	margin-top: 23px;
+	padding: 9px 10px !important;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navbar-default,
+.navbar-collapse {
+	border: none;
+}
+
+@media (min-width: 768px) {
+	.navbar-default {
+		background: rgba(0,0,0,0.5);
+	}
+	.navbar-nav li a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+/*		padding-top: 26.5px;
+		padding-bottom: 26.5px;*/
+		padding: 26.5px 20px;
+		line-height: 27px;
+	}
+
+	.navbar-brand img {
+		margin-left: 20%;
+	}
+
+	.navbar-right {
+		margin-right: 5%;
+	}
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+/* VIDEO HEADER */
+
+.video-container {
+	width: 100%;
+	height: 75%;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#nav-vid {
+	width: 100%;
+}
+
+.header-overlay {
+	position: absolute;
+	background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0)),
+				linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+}
+
+.overlay-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 5px #000;
+	color: #fff;
+	font-family: Lobster;
+	font-size: 3em;
+}
+
+
+/* HEADER BUTTON*/
+
+.btn {
+	font-family: Open Sans;
+	font-size: 0.9rem;
+	font-weight: 700;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+.btn-lg {
+    padding: 15px 30px;
+}
+
+.btn-custom,
+.btn-custom:visited  {
+    color: #fff !important;
+    background: rgba(48,136,114,0.8);
+    border-color: rgb(24,115,93,1);
+}
+
+.btn-custom:hover {
+    color: #fff;
+    background: rgba(48,136,114,1);
+    border-color: rgb(24,115,93,1);
+}
+
+.btn-custom:active {
+    color: #fff;
+    background-color: rgb(24,115,93);
+    border-color: rgb(47, 132, 111)
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+	margin: 5% auto;
+	font-size: 1rem;
+}
+
+.main-content p {
+	width: 80%;
+	margin: 0 auto 5%;
+
+}
+
+.shop-container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.shop-container a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.shop-container a:hover {
+	text-decoration: none;
+	color: #dcdcdc ;
+}
+
+#shop-img {
+	width: 100%;
+}
+
+.shop-overlay {
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	width: 68%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.shop-overlay:hover {
+	background: rgba(0,0,0,0.7);
+}
+
+.shop-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0 0 5px #000;
+	font-family: Lobster;
+	font-size: 2.5rem;
+}
+
+.col-sm-6 {
+	margin-bottom: 5%;
+}
+
+/*  FOOTER */
+
+.footer {
+	background: #151515;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	color: #696969;
+	padding: 10px 0;
+	line-height: 40px;
+}
+
+.ftr-content {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.ftr-comp {
+	float: left;
+}
+
+.soc-med {
+	float: right;
+}
+
+.soc-med img {
+	margin-left: 10px;
+	opacity: 0.6;
+}
+
+.soc-med img:hover {
+	opacity: 0.4;
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 970px) {
+	.overlay-text {
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+	/* NAVBAR */
+	#logo {
+		width: 100%;
+		max-width: 200px;
+	}
+
+	.navbar {
+		min-height: 78px;
+		border-radius: none;
+		border-radius: 0px;
+		padding: 10px;
+	}
+
+	.navbar-brand {
+		padding: 0 2%;
+		height: 78px;
+		line-height: 78px;
+	}
+
+	/* VIDEO OVERLAY*/
+
+	.overlay-text {
+		font-size: 1.5rem;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.btn-lg {
+    padding: 8px 18px;
+	}
+
+	/* MAIN CONTENT */
+
+	.main-content p {
+		width: 90%;
+	}
+
+}
