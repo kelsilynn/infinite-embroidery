@@ -278,11 +278,13 @@ body {
 	}
 }
 
-
-
 /* MOBILE */
 
 @media (max-width: 768px) {
+
+	body {
+		top: 70px;
+	}
 
 	/* NAVBAR */
 
