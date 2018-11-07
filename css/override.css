@@ -253,6 +253,15 @@ body {
 
 
 
+/* SHOP */
+
+.shop-iframe {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
 /*  FOOTER */
 
 .footer {
