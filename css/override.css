@@ -42,6 +42,12 @@ body {
 	padding-left: 0;
 }
 
+	.navbar-default .navbar-nav li a,
+	.navbar-default .navbar-nav li a:hover {
+    	color: #fff;
+    	text-decoration: none;
+	}
+
 .navbar-brand {
 	padding: 0 5%;
 	height: 78px;
@@ -64,21 +70,6 @@ body {
   /* (80px - button height 34px) / 2 = 23px */
 	margin-top: 23px;
 	padding: 9px 10px !important;
-}
-
-.navbar-default .navbar-nav li a,
-.navbar-default .navbar-nav li a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
-.navbar-default .navbar-nav li a::after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 2px;
-	background: #fff;
-	transition: width .3s;
 }
 
 .navbar-default .navbar-nav li a:hover::after {
@@ -109,6 +100,15 @@ body {
 
 	.navbar-right {
 		margin-right: 5%;
+	}
+
+	.navbar-default .navbar-nav li a::after {
+		content: '';
+		display: block;
+		width: 0;
+		height: 2px;
+		background: #fff;
+		transition: width .3s;
 	}
 }
 
